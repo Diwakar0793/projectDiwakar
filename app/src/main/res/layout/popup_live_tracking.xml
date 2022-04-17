@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="450dp"
+    android:layout_centerInParent="true"
+    android:background="@drawable/curved_black_rectangle">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/curved_textview_bg_black"
+            android:text="Current Location"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:paddingLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/hk_grotesk_regular"
+            android:layout_gravity="center"
+            android:gravity="center|start"
+            android:drawableLeft="@drawable/white_locator"
+            android:drawablePadding="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/curved_textview_bg_black"
+            android:text="Your Corbet"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:paddingLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:drawableLeft="@drawable/white_locator"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/hk_grotesk_regular"
+            android:layout_gravity="center"
+            android:gravity="center|start"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="7.4 km"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/hk_grotesk_regular"
+            android:paddingLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:gravity="center|start"/>
+
+    </LinearLayout>
+
+    <!--<fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"/>-->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:src="@drawable/map"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Crown Plaza Chennai"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="->"
+            android:textColor="@color/white"
+            android:layout_marginLeft="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Saidapet Chennai"
+            android:textColor="@color/white"
+            android:layout_marginLeft="5dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

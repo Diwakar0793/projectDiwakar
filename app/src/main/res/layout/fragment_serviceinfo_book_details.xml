@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/riding_black_bg">
+
+    <ProgressBar
+        android:id="@+id/progress_service_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/RL_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/backbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10pt"
+                android:backgroundTint="@android:color/transparent"
+                android:src="@drawable/ic_back"
+                tools:targetApi="lollipop" />
+
+            <LinearLayout
+                android:id="@+id/service"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/TV_battery_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="80dp"
+                    android:text="@string/service_info"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/TextSize20" />
+
+                <View
+                    android:layout_width="30dp"
+                    android:layout_height="3dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginLeft="50dp"
+                    android:background="#2ED981" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp"
+                    android:text="EV Service Station"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/TextSize17" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Saidapet, Chennai"
+                    android:textColor="@color/grey"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LL_service"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/service"
+                android:layout_margin="30dp"
+                android:orientation="vertical">
+
+
+                <RadioGroup
+                    android:id="@+id/RG_service"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/RB_reguar_service"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Regular service"
+                        android:textColor="@color/white" />
+
+                    <RadioButton
+                        android:id="@+id/RB_issue_service"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Service due to issue"
+                        android:textColor="@color/white" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/calender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/LL_service"
+                android:layout_marginHorizontal="30dp"
+                android:background="#434345"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/hk_grotesk_regular"
+                    android:paddingLeft="10dp"
+                    android:text="Preferred Time Slot"
+                    android:textColor="@color/white"
+                    android:textSize="21sp" />
+
+                <DatePicker
+                    android:id="@+id/datePicker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:datePickerMode="calendar" />
+
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_below="@+id/calender"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="25dp"
+                android:background="@drawable/roundedrectanglegreenbackground"
+                android:fontFamily="@font/hk_grotesk_bold"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="Book"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

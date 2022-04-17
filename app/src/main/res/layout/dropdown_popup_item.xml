@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    android:fontFamily="@font/avenir_light"
+    android:ellipsize="none"
+    android:padding="5dp"
+    android:paddingLeft="10dp"
+    android:textSize="@dimen/TextSize15"
+    android:textColor="@color/light_purple"
+    android:singleLine="true"
+    android:paddingStart="10dp"
+    tools:ignore="RtlSymmetry" />

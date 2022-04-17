@@ -1,0 +1,86 @@
+<resources>
+    <string name="app_name">Scoo</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="first_name">First name</string>
+    <string name="get_otp"><![CDATA[Get OTP  >]]></string>
+    <string name="resend_otp"><![CDATA[Resend OTP  >]]></string>
+    <string name="already_have_an_account">Already have an account ?  </string>
+    <string name="signin">Sign In!</string>
+    <string name="last_name">Last Name</string>
+    <string name="email">Email</string>
+    <string name="phone">Phone #</string>
+    <string name="enter"><![CDATA[Enter  >]]></string>
+    <string name="trip">Trip</string>
+    <string name="service">Service</string>
+    <string name="profile">Profile</string>
+    <string name="home">Home</string>
+    <string name="title_activity_menu">MenuActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="motor_is_on">Motor is On</string>
+    <string name="seat_lock">Seat Lock</string>
+    <string name="find_my_ride">Find My Ride</string>
+    <string name="battery_lock">Battery Lock</string>
+    <string name="select_issue">Select Issue</string>
+    <string name="for_service_assistance">&#160;for service assistance.</string>
+    <string name="send_request">Send Request</string>
+    <string name="issue_description">Issue Description</string>
+    <string name="past_service">Past Service</string>
+    <string name="planned_service">Planned Service</string>
+    <string name="request_service">Request Service</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="day">Day</string>
+    <string name="week">Week</string>
+    <string name="month">Month</string>
+    <string name="year">Year</string>
+    <!--    <string name="ride_statistics">Ride Statistics</string>-->
+    <string name="battery_level">Battery Level</string>
+    <string name="total_ride_time">Total Ride Time</string>
+    <string name="distance">Distance</string>
+    <string name="riding_time">Riding Time</string>
+    <string name="avg_speed">Avg. Speed</string>
+    <string name="service_info">Service Info</string>
+    <string name="ride_statistics">Ride Statistics</string>
+    <!--    <string name="battery_info">Battery Info</string>-->
+    <string name="range_left">Range Left</string>
+    <string name="roadside_assistance">Roadside assistance</string>
+    <string name="book_now">Book Now</string>
+    <string name="history">History</string>
+    <string name="trip_history">Trip History</string>
+    <string name="impact">Impact</string>
+    <string name="trees_planted">Trees Planted</string>
+    <string name="title_activity_test">test</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="battery_info">Battery Info</string>
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyBuG23Sx3ezDDV9HKzUMWKZz_zdxD7x7JA</string>
+    <string name="login">Login</string>
+    <string name="set_pin">Set Pin</string>
+
+    <string name="geofence_unknown_error">
+    Unknown error: the Geofence service is not available now.
+  </string>
+    <string name="geofence_not_available">
+    Geofence service is not available now. Go to Settings>Location>Mode and choose High accuracy.
+  </string>
+    <string name="geofence_too_many_geofences">
+    Your app has registered too many geofences.
+  </string>
+    <string name="geofence_too_many_pending_intents">
+    You have provided too many PendingIntents to the addGeofences() call.
+  </string>
+</resources>

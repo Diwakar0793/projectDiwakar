@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="10dp"
+        android:orientation="vertical"
+        android:paddingHorizontal="10dp">
+
+        <ProgressBar
+            android:id="@+id/progress_p"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+
+
+        <RelativeLayout
+            android:id="@+id/RL_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/backBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10pt"
+                android:layout_marginEnd="10pt"
+                android:layout_marginRight="10pt"
+                android:layout_marginBottom="10pt"
+                android:backgroundTint="@android:color/transparent"
+                android:clickable="true"
+                android:src="@drawable/ic_back_black" />
+
+            <TextView
+                android:id="@+id/tv_prof"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="80dp"
+                android:text="Select EV"
+                android:textColor="@color/riding_black_bg"
+                android:textSize="20sp" />
+
+            <View
+                android:layout_width="30dp"
+                android:layout_height="3dp"
+                android:layout_below="@+id/tv_prof"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:background="#8bd70a" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/rv_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_back"
+            android:gravity="center"
+            android:padding="15dp">
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!--<RadioButton
+                    android:id="@+id/RB_ampere_fx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textSize="16sp"
+                    android:text="Ampere  Magnus-FX  KA05AB3452" />
+
+                <RadioButton
+                    android:id="@+id/RB_ampere_pro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textSize="16sp"
+                    android:text="Ampere Magnus-Pro KA02HJ7845" />-->
+
+<!--                <RadioButton-->
+<!--                    android:id="@+id/RB_ather"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    android:textSize="16sp"-->
+<!--                    android:text="Ather Ather-450X KA03HJ6896" />-->
+
+            </RadioGroup>
+
+
+
+            <!--<androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_selectev"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:orientation="horizontal"
+                android:padding="10dp" />-->
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/TV_mapped_veh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No mapped bikes found!"
+            android:fontFamily="@font/hk_grotesk_regular"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"/>
+    </LinearLayout>
+</LinearLayout>

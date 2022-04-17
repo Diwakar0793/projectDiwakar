@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.application.scoo">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:name=".AppBase"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/NoActionTheme"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".CurrentPlan"
+            android:exported="false" />
+        <activity
+            android:name=".ui.home.NotificationActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.home.map.MapsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.home.LocateBike"
+            android:exported="false" />
+        <activity
+            android:name=".ui.home.PaymentFailure"
+            android:exported="false" />
+        <activity
+            android:name=".ui.home.PaymentSuccessDialog"
+            android:exported="false"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".login.ForgotPswrd"
+            android:exported="false" />
+        <activity
+            android:name=".ui.SelectEV"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Contact"
+            android:exported="false" />
+        <activity
+            android:name=".ui.PayRental"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Profile"
+            android:exported="false" />
+        <activity
+            android:name=".ui.base.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+            android:name=".login.LoginActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+            android:name=".login.LoginSignUpOptionActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+            android:name=".ui.home.MenuActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+            android:name=".login.SignUpActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+            android:name=".login.ChangePasswordActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+            android:name=".login.OTPActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" /> <!-- Add your Map API key here -->
+        <meta-data
+            android:name="com.razorpay.ApiKey"
+            android:value="rzp_test_HBW6j2quPlZsPd" /> <!-- Add your RazorPay API key here -->
+        <receiver
+            android:name=".services.geofencing.GeofenceBroadcastReceiver"
+            android:enabled="true"
+            android:exported="true" />
+
+        <service
+            android:name=".services.geofencing.GeofenceTransitionsJobIntentService"
+            android:exported="true"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+    </application>
+
+</manifest>

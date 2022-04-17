@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/Length15DP"
+    android:layout_marginBottom="50dp">
+
+    <LinearLayout
+        android:id="@+id/bikeTypeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="5dp">
+
+        <TextView
+            android:id="@+id/modelName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/avenir_light"
+            android:text="Boom Bike"
+            android:textColor="@color/light_blue"
+            android:textSize="@dimen/TextSize20" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/avenir_light"
+            android:text=" - "
+            android:textColor="@color/light_blue"
+            android:textSize="@dimen/TextSize20" />
+
+        <TextView
+            android:id="@+id/modelColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/avenir_light"
+            android:text="Lush Green"
+            android:textColor="@color/light_green"
+            android:textSize="@dimen/TextSize20" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dropdownContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bikeTypeLayout"
+        android:layout_margin="@dimen/Length15DP"
+        android:background="@drawable/ic_rectangle_dropdown"
+        android:paddingHorizontal="5dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/MyDropdown2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="5dp"
+            android:focusableInTouchMode="false"
+            android:hint="@string/select_issue"
+            android:textColorHint="@color/light_blue"
+            app:boxBackgroundMode="outline"
+            app:boxStrokeWidth="0dp"
+            app:boxStrokeWidthFocused="0dp"
+            app:endIconTint="@color/white"
+            app:endIconDrawable="@drawable/ic_arrow_down">
+
+            <AutoCompleteTextView
+                android:id="@+id/choose_issue_dropdown"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/avenir_light"
+                android:inputType="none"
+                android:textColor="@color/light_purple"
+                android:textSize="14sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/descriptionContainer"
+        android:layout_width="match_parent"
+        android:layout_height="175dp"
+        android:layout_below="@id/dropdownContainer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="20dp"
+        android:background="@drawable/ic_rectangle_big"
+        android:paddingTop="2dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/phoneTextLayout"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:hint="@string/issue_description"
+            android:textColorHint="@color/light_blue"
+            app:boxBackgroundMode="none">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/avenir_light"
+                android:inputType="textMultiLine"
+                android:textColor="@color/light_purple"
+                android:textSize="@dimen/TextSize14" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/numberLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/descriptionContainer"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/avenir_medium"
+            android:text="Call "
+            android:textColor="@color/light_blue"
+            android:textSize="@dimen/TextSize14" />
+
+        <TextView
+            android:id="@+id/customerCareNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/avenir_medium"
+            android:text="+91 9999999999"
+            android:textColor="@color/light_blue"
+            android:textSize="@dimen/TextSize14" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/avenir_medium"
+            android:text="@string/for_service_assistance"
+            android:textColor="@color/light_blue"
+            android:textSize="@dimen/TextSize14" />
+
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/send_request_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/numberLayout"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_ripple"
+        android:fontFamily="@font/avenir_book"
+        android:text="@string/send_request"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/TextSize15"
+        app:backgroundTint="@null"
+        android:selectAllOnFocus="true"/>
+
+</RelativeLayout>

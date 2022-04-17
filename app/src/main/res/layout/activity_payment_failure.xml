@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="170pt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_marginHorizontal="10pt"
+    android:layout_gravity="center"
+    android:background="@drawable/payment_fail">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:text="Payment Failure"
+        android:textSize="35sp"/>
+
+        <Button
+            android:id="@+id/btn_pay_fail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40pt"
+            android:layout_marginTop="10pt"
+            android:background="@drawable/buttonbackground"
+            android:fontFamily="@font/hk_grotesk_regular"
+            android:text="OK"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+</LinearLayout>

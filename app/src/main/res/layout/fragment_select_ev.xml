@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardlayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="20pt"
+    android:background="@drawable/cardbg"
+    android:paddingHorizontal="25dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5pt"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2pt"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="5pt"
+            android:fontFamily="@font/avenir_light"
+            android:gravity="center"
+            android:text="Select EV"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/loginTxtHeaderSize" />
+
+
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/profileimg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30pt"
+        android:src="@drawable/profile" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/RV_selev"
+        android:layout_below="@+id/profileimg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="10pt"
+        android:layout_marginHorizontal="5pt"
+        android:padding="5pt"/>
+   <!-- <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profileimg"
+        android:layout_marginTop="10pt"
+        android:layout_marginHorizontal="2pt"
+        android:padding="5pt"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radio_button_1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/veh_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="@dimen/fourteen_14"
+                android:text="Vehicle Name" />
+
+            <TextView
+                android:id="@+id/model_col"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="@dimen/fourteen_14"
+                android:text="ModelAndVariant with color" />
+
+            <TextView
+                android:id="@+id/reg_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Regnumber"
+                android:textSize="@dimen/fourteen_14"
+                android:textColor="@color/light_blue"/>
+        </LinearLayout>
+    </LinearLayout>-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_button_ev"
+        android:layout_below="@id/RV_selev"
+        android:layout_marginTop="10pt"
+        android:gravity="center"
+        android:text="Go green"
+        android:textAllCaps="true"
+        android:layout_marginBottom="20pt"
+        android:layout_centerInParent="true"
+        tools:ignore="ContentDescription">
+
+
+    </TextView>
+</RelativeLayout>
+
+

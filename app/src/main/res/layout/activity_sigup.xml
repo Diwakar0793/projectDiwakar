@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_centerInParent="true">
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5pt"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="5pt"
+            android:fontFamily="@font/avenir_light"
+            android:gravity="center"
+            android:text="Sign Up"
+            android:textColor="@color/black_100"
+            android:textSize="@dimen/loginTxtHeaderSize" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/textInputLayout"
+        android:layout_marginHorizontal="10pt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:orientation="vertical">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/mobilenum"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:hint="Mobile No \ Email"
+        android:textColorHint="@color/white"
+        app:endIconMode="clear_text"
+        app:errorEnabled="true"
+        app:startIconDrawable="@drawable/ic_smartphone"
+        app:startIconTint="@color/black"
+        app:boxBackgroundColor="@color/white"
+        app:boxCornerRadiusBottomEnd="25pt"
+        app:boxCornerRadiusBottomStart="25pt"
+        app:boxCornerRadiusTopEnd="25pt"
+        app:boxCornerRadiusTopStart="25pt">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionNext"
+            android:hint="Mobile No \ Email"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/signUpTextLayout"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="@color/light_green"
+            android:text="Login"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+</RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I have read and agree to the Software License and Service Agreement and Privacy Policy"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="5pt"/>
+</RelativeLayout>

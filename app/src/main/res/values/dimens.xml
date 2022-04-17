@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="loginTxtHeaderSize">21sp</dimen>
+    <dimen name="getOTPSize">12sp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="TextSize17">16dp</dimen>
+    <dimen name="TextSize14">14sp</dimen>
+    <dimen name="TextSize15">15sp</dimen>
+    <dimen name="TextSize20">20sp</dimen>
+    <dimen name="TextSize10">10sp</dimen>
+    <dimen name="TextSize19">19sp</dimen>
+    <dimen name="Length15DP">15dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="eight_dp">8dp</dimen>
+</resources>

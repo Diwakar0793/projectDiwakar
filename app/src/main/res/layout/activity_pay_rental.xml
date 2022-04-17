@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="10dp"
+        android:orientation="vertical"
+        android:paddingHorizontal="10dp">
+
+        <ProgressBar
+            android:id="@+id/progress_p"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+
+
+        <RelativeLayout
+            android:id="@+id/RL_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/backBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10pt"
+                android:layout_marginEnd="10pt"
+                android:layout_marginRight="10pt"
+                android:layout_marginBottom="10pt"
+                android:backgroundTint="@android:color/transparent"
+                android:clickable="true"
+                android:src="@drawable/ic_back_black" />
+
+            <TextView
+                android:id="@+id/tv_prof"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="80dp"
+                android:text="Pay Rental"
+                android:textColor="@color/riding_black_bg"
+                android:textSize="20sp" />
+
+            <View
+                android:layout_width="30dp"
+                android:layout_height="2dp"
+                android:layout_below="@+id/tv_prof"
+                android:background="#8bd70a" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="20dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:text="Amount Due"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:text="Rs.1000"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/btn_invoice"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:padding="2dp"
+                        android:text="View Invoice"
+                        android:textSize="13sp" />
+
+                    <View
+                        android:layout_width="75dp"
+                        android:layout_height="1dp"
+                        android:background="@color/green" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_pay"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/roundedrectanglegreenbackground"
+                android:gravity="center"
+                android:text="Pay" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/view_payhist"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="false"
+                        android:text="View Payment History"
+                        android:textColor="#adadad" />
+
+                    <View
+                        android:layout_width="130dp"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/view_payhist"
+                        android:layout_alignParentRight="false"
+                        android:layout_marginLeft="3dp"
+                        android:background="#8bd70a" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp">
+
+                <TableRow android:background="@color/green">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"
+                        android:padding="10dp"
+                        android:text="Date"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"
+                        android:padding="10dp"
+                        android:text="Amount"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"
+                        android:padding="10dp"
+                        android:text="Payment Type"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+
+                    <!--                    <TextView-->
+                    <!--                        android:layout_width="0dp"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:layout_weight="4"-->
+                    <!--                        android:gravity="center_horizontal"-->
+                    <!--                        android:padding="10dp"-->
+                    <!--                        android:text="extra"-->
+                    <!--                        android:textColor="@color/white"-->
+                    <!--                        android:textSize="12sp" />-->
+
+                </TableRow>
+
+                <!--Table data-->
+
+                <!--<TableRow>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"
+                        android:padding="10dp"
+                        android:text="10/01/2021"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"
+                        android:padding="10dp"
+                        android:text="1200"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"
+                        android:padding="10dp"
+                        android:text="Card"
+                        android:textSize="12sp" />
+
+                    &lt;!&ndash;                    <TextView&ndash;&gt;
+                    &lt;!&ndash;                        android:layout_width="0dp"&ndash;&gt;
+                    &lt;!&ndash;                        android:layout_height="wrap_content"&ndash;&gt;
+                    &lt;!&ndash;                        android:layout_weight="4"&ndash;&gt;
+                    &lt;!&ndash;                        android:gravity="center_horizontal"&ndash;&gt;
+                    &lt;!&ndash;                        android:padding="10dp"&ndash;&gt;
+                    &lt;!&ndash;                        android:text="cere"&ndash;&gt;
+                    &lt;!&ndash;                        android:textSize="10sp" />&ndash;&gt;
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"
+                        android:padding="10dp"
+                        android:text="13/02/2021"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"
+                        android:padding="10dp"
+                        android:text="1200"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"
+                        android:padding="10dp"
+                        android:text="UPI"
+                        android:textSize="12sp" />
+
+                </TableRow>-->
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/RV_payment_history"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            </TableLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
